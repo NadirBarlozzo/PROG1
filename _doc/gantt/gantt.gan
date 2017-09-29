@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-08-28" view-index="0" gantt-divider-location="612" resource-divider-location="300" version="2.8.5" locale="it">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="345" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="126" order="1"/>
+        <field id="tpd5" name="Data di fine" width="137" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nome" width="210" order="0"/>
+        <field id="1" name="Ruolo predefinito" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Analisi" meeting="false" start="2017-09-01" duration="11" complete="0" expand="true">
+            <task id="5" name="Intervista con il cliente" meeting="false" start="2017-09-01" duration="1" complete="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="8" name="Risoluzione dei dubbi sulla richiesta" color="#8cb6ce" meeting="false" start="2017-09-08" duration="1" complete="0" expand="true">
+                <depend id="13" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="13" name="Analisi del dominio" color="#8cb6ce" meeting="false" start="2017-09-15" duration="1" complete="0" expand="true"/>
+            <task id="18" name="Analisi requisiti" meeting="false" start="2017-09-15" duration="1" complete="0" expand="true"/>
+            <task id="22" name="Analisi costi e benefici" color="#8cb6ce" meeting="false" start="2017-09-15" duration="1" complete="0" expand="true"/>
+            <task id="71" name="Documento specifica" meeting="false" start="2017-09-15" duration="1" complete="0" expand="true"/>
+            <task id="24" name="Documento specifica completato" color="#8cb6ce" meeting="true" start="2017-09-15" duration="0" complete="0" expand="true">
+                <depend id="26" type="2" difference="0" hardness="Rubber"/>
+            </task>
+        </task>
+        <task id="26" name="Progettazione" color="#000000" meeting="false" start="2017-09-22" duration="1" complete="0" expand="true">
+            <task id="32" name="Mockup interfacce" meeting="false" start="2017-09-22" duration="1" complete="0" expand="true"/>
+            <task id="35" name="Design Procedurale (Moduli)" meeting="false" start="2017-09-22" duration="1" complete="0" expand="true"/>
+            <task id="38" name="Design del sistema" meeting="false" start="2017-09-22" duration="1" complete="0" expand="true"/>
+            <task id="50" name="Stabilire formato per file csv o xml" meeting="false" start="2017-09-22" duration="1" complete="0" expand="true">
+                <depend id="40" type="2" difference="0" hardness="Rubber"/>
+            </task>
+        </task>
+        <task id="40" name="Implementazione" color="#000000" meeting="false" start="2017-09-29" duration="7" complete="0" expand="true">
+            <task id="43" name="Preparare ambiente di sviluppo" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true">
+                <task id="77" name="Installare VMWare" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
+                <task id="78" name="Installare sistema operativo" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="44" name="Installare Apache e PHP" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true">
+                <depend id="46" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="46" name="Creare design web secondo i mockups" color="#8cb6ce" meeting="false" start="2017-10-06" duration="1" complete="0" expand="true">
+                <depend id="47" type="2" difference="0" hardness="Rubber"/>
+            </task>
+            <task id="47" name="Creare moduli PHP" color="#8cb6ce" meeting="false" start="2017-10-09" duration="1" complete="0" expand="true">
+                <task id="81" name="Modulo raccolta dati" meeting="false" start="2017-10-09" duration="1" complete="0" expand="true"/>
+                <task id="85" name="Modulo scrittura su file" meeting="false" start="2017-10-09" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="86" name="Caricare prodotto su infomaniak" color="#8cb6ce" meeting="true" start="2017-10-09" duration="0" complete="0" expand="true">
+                <depend id="60" type="2" difference="0" hardness="Rubber"/>
+            </task>
+        </task>
+        <task id="60" name="Test" color="#000000" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true">
+            <task id="62" name="Unificare i moduli e testarne la funzionalità" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true"/>
+            <task id="64" name="Seguire protocolli di test e controllarne il risultato" meeting="false" start="2017-10-20" duration="1" complete="0" expand="true">
+                <depend id="67" type="2" difference="0" hardness="Rubber"/>
+            </task>
+        </task>
+        <task id="67" name="Consegna" color="#000000" meeting="false" start="2017-10-27" duration="1" complete="0" expand="true">
+            <task id="69" name="Colloquio con il cliente e consegna del prodotto" color="#8cb6ce" meeting="true" start="2017-10-27" duration="0" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
