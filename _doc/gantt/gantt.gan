@@ -56,7 +56,7 @@
                 <depend id="40" type="2" difference="0" hardness="Rubber"/>
             </task>
         </task>
-        <task id="40" name="Implementazione" color="#000000" meeting="false" start="2017-09-29" duration="7" complete="0" expand="true">
+        <task id="40" name="Implementazione" color="#000000" meeting="false" start="2017-09-29" duration="11" complete="0" expand="true">
             <task id="43" name="Preparare ambiente di sviluppo" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true">
                 <task id="77" name="Installare VMWare" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
                 <task id="78" name="Installare sistema operativo" meeting="false" start="2017-09-29" duration="1" complete="0" expand="true"/>
@@ -67,11 +67,11 @@
             <task id="46" name="Creare design web secondo i mockups" color="#8cb6ce" meeting="false" start="2017-10-06" duration="1" complete="0" expand="true">
                 <depend id="47" type="2" difference="0" hardness="Rubber"/>
             </task>
-            <task id="47" name="Creare moduli PHP" color="#8cb6ce" meeting="false" start="2017-10-09" duration="1" complete="0" expand="true">
-                <task id="81" name="Modulo raccolta dati" meeting="false" start="2017-10-09" duration="1" complete="0" expand="true"/>
-                <task id="85" name="Modulo scrittura su file" meeting="false" start="2017-10-09" duration="1" complete="0" expand="true"/>
+            <task id="47" name="Creare moduli PHP" color="#8cb6ce" meeting="false" start="2017-10-13" duration="1" complete="0" expand="true">
+                <task id="81" name="Modulo raccolta dati" meeting="false" start="2017-10-13" duration="1" complete="0" expand="true"/>
+                <task id="85" name="Modulo scrittura su file" meeting="false" start="2017-10-13" duration="1" complete="0" expand="true"/>
             </task>
-            <task id="86" name="Caricare prodotto su infomaniak" color="#8cb6ce" meeting="true" start="2017-10-09" duration="0" complete="0" expand="true">
+            <task id="86" name="Caricare prodotto su infomaniak" color="#8cb6ce" meeting="true" start="2017-10-13" duration="0" complete="0" expand="true">
                 <depend id="60" type="2" difference="0" hardness="Rubber"/>
             </task>
         </task>
